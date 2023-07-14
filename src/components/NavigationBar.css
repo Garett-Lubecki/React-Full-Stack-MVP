@@ -1,0 +1,16 @@
+#navigationBar{
+    display: flex;
+    height: 15%;    
+    width: 96vw;
+    min-width: 50%;
+    padding: 20px;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+
