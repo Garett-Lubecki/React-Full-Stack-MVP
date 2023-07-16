@@ -14,6 +14,7 @@ const pool = new Pool ({
 const app = express()
 
 //Will need to fiddle with origin since it is not secure
+//temp origin
 app.use(cors({
     origin: '*'
 }))
@@ -27,7 +28,7 @@ app
             res.send(result.rows)
 
         } catch (err) {
-            console.log(err.message)
+            console.log(err)
             res.status(404).send('Interal Server Error')
         }
     })
