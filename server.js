@@ -44,6 +44,7 @@ app
     })
     .post('/questions', async (req, res) => {
         let {question, answer} = req.body
+        console.log(req.body)
         //add some error handling for if empty?
         try{
             let result = await pool.query('INSERT INTO questions (question, answer) VALUES ($1, $2) RETURNING *', [question, answer])
