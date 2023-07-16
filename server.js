@@ -15,7 +15,7 @@ const app = express()
 
 //Will need to fiddle with origin since it is not secure
 app.use(cors({
-    origin: 'http://127.0.0.1:5173/'
+    origin: '*'
 }))
 
 app.use(express.json());
