@@ -28,7 +28,7 @@ app
             res.send(result.rows)
 
         } catch (err) {
-            console.log(err)
+            console.log(err.message)
             res.status(404).send('Interal Server Error')
         }
     })
