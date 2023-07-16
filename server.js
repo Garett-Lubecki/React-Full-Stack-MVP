@@ -15,7 +15,7 @@ const app = express()
 
 //Will need to fiddle with origin since it is not secure
 app.use(cors({
-    origin: 'http://localhost:5175'
+    origin: 'https://flash-cards.onrender.com/questions'
 }))
 
 app.use(express.json());
