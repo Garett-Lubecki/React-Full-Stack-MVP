@@ -18,3 +18,12 @@
     color: rgb(196, 224, 255);
     cursor: pointer;
 }
+
+.mainPageQuestions{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}

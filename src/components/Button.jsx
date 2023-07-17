@@ -1,4 +1,4 @@
-
+import './Button.css'
 
 const Button = ({quiz, setButton}) => {
     const handleClick = () => {
@@ -7,7 +7,7 @@ const Button = ({quiz, setButton}) => {
 
     return (
         <div>
-        <button type="submit" onClick={handleClick}> Start Quiz
+        <button type="submit" id="startQuiz" onClick={handleClick}> Start Quiz
         </button>
         </div>
     )

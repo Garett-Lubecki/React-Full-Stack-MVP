@@ -3,7 +3,7 @@ import ShowAll from './ShowAll'
 import {useState} from 'react'
 import './MainPage.css'
 
-const MainPage = ({quiz, currentPage}) => {
+const MainPage = ({quiz, currentPage, setQuiz}) => {
 
     if(currentPage === 'Questions') {
         return <div className = 'mainPageQuestions'>
@@ -12,7 +12,7 @@ const MainPage = ({quiz, currentPage}) => {
     }
     if(currentPage === 'Show All') {
         return <div className='allQuestions'> 
-            <ShowAll quiz={quiz}/>
+            <ShowAll quiz={quiz} setQuiz ={setQuiz}/>
         </div>
     }
 }

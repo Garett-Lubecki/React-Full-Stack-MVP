@@ -8,7 +8,7 @@ import AddPost from './components/AddPost'
 function App() {
   
   const [quiz, setQuiz] = useState([])
-  const URL = 'https://flash-cards.onrender.com/questions' //'http://localhost:8000/questions'
+  const URL = 'http://localhost:8000/questions' //'https://flash-cards.onrender.com/questions' 
   const typesOfPages = ['Questions', 'Show All', 'Post']
   const [currentPage, setPage] = useState('Questions')
   const [displayPost, setDisplayPost] = useState(false)
@@ -27,7 +27,7 @@ function App() {
     <>
       <NavigationBar setPage={setPage} displayPost={displayPost} setDisplayPost={setDisplayPost}/>
       {displayPost && <AddPost />}
-      <MainPage quiz={quiz} currentPage ={currentPage}/>
+      <MainPage quiz={quiz} setQuiz = {setQuiz}  currentPage ={currentPage}/>
       <Footer />
     </>
   )
