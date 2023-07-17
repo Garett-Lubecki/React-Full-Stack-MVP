@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './backFlashCard.css'
 
 const BackFlashCard = ({question, currentQuestion, setcardNumber, setFaceOfCard, setButton, cardNumber, quizLength, setCurrentQuestion, quiz}) => {
     function handleClick() {
@@ -19,13 +20,13 @@ const BackFlashCard = ({question, currentQuestion, setcardNumber, setFaceOfCard,
     }
     if(quiz.length === cardNumber){
         return <div>
-            <button type="submit" onClick={handleRestart}> Study Some More? </button>
+            <button id ="againBtn"type="submit" onClick={handleRestart}> Study Some More? </button>
         </div>
     } else {
-        return <div className="flashCard">
-        <div> {currentQuestion.answer} </div>
-        <button type="submit" onClick={handleClick}> Next Question </button>
-        </div>
+        return <div class="flashCard">
+        <div class="answer">{currentQuestion.answer}</div>
+        <button type="submit" class="nextButton" onClick={handleClick}>Next Question</button>
+      </div>
 
     }
 

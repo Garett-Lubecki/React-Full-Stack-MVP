@@ -1,16 +1,65 @@
-#navigationBar{
+#navigationBar {
     display: flex;
-    height: 15%;    
-    width: 96vw;
-    min-width: 50%;
-    padding: 20px;
-    position: static;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    height: 60px;
+    width: 100vw;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1c2239;
     color: white;
-    border: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
-}
-
-
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #333333;
+  }
+  
+  
+  .navigationButtons {
+    margin-right: 20px;
+    background-color: transparent;
+  }
+  
+  .navigationButtons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: transparent;
+  }
+  
+  .navigationButtons a:hover {
+    color: #a0a0a0;
+  }
+  
+  .navLinks {
+    display: flex;
+    background-color: transparent;
+    margin-right: 2rem;
+  }
+  
+  #navigationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  
+  .navButtons {
+    margin-right: 10px;
+    background-color: transparent;
+  }
+  
+  .navButtons a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .navButtons a:hover {
+    color: #a0a0a0;
+  }
+  

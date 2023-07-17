@@ -1,5 +1,27 @@
-#startQuiz{
-    height: 10rem;
-    width: 20rem;
-    background-color: black;
-}
+#againBtn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #0A192F;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  #againBtn:hover {
+    background-color: #3A506B;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+  }
+  
+  #againBtn:focus {
+    outline: none;
+  }
+  
+  #againBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+  }

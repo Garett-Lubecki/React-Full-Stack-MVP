@@ -17,10 +17,10 @@ const NavigationBar = ({setPage, displayPost, setDisplayPost}) => {
         <>
         <nav id='navigationBar'>
             <div id='homeBTN' className="navigationButtons" onClick={handleHome}> 
-                <a href="#"><b>Flash Cards</b></a>
+                <a href="#">Flash Cards</a>
             </div>
             
-            <div id="navigationLinks">
+            <div className="navLinks" id="navigationLinks">
                 <ul id = 'navigationList'>
                     <li id="showAll" className="navButtons" onClick={handleShowAll}>
                         <a href='#'> All Questions </a>

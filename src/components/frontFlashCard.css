@@ -1,0 +1,15 @@
+.flashCard {
+    background-color: rgb(43, 54, 75);
+    color: white;
+    height: 50vh;
+    width: 55vw;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }

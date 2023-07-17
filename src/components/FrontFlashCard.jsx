@@ -1,5 +1,5 @@
 
-
+import './frontFlashCard.css'
 
 const FrontFlashCard = ({setFaceOfCard, question, currentQuestion}) => {
     function handleClick () {

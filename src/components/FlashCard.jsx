@@ -2,6 +2,7 @@ import { useState } from "react"
 import FrontFlashCard from "./FrontFlashCard"
 import BackFlashCard from "./BackFlashCard"
 
+
 const FlashCard = ({setButton, setcardNumber, question,  cardNumber, quizLength, setCurrentQuestion, quiz, currentQuestion}) => {
     const [faceOfCard, setFaceOfCard] = useState (true)
     if(faceOfCard) {
