@@ -68,13 +68,13 @@ const SingleQuestion = ({ question, setQuiz }) => {
 
     return (
       <div className="singleQuestion">
-        <form id="postForm">
+        <form id="updateForm">
           <input type="text" placeholder="Update Question Here" id="inputQuestion" onChange={handleQuestion} value={textQuestion} />
           <input type="text" placeholder="Update Answer Here" id="inputAnswer" onChange={handleAnswer} value={textAnswer} />
-          <button id="updatePostButton" type="submit" onClick={handleUpdate}>
+        </form>
+        <button id="updatePostButton" type="submit" onClick={handleUpdate}>
             Update Question
           </button>
-        </form>
         <button id="edit" type="submit" onClick={handleSwitch}>
           Edit Question
         </button>
@@ -88,7 +88,7 @@ const SingleQuestion = ({ question, setQuiz }) => {
         <button id="edit" type="submit" onClick={handleSwitch}>
           Edit Question
         </button>
-        <button id="edit" type="submit" onClick={handleDelete}>
+        <button id="delete" type="submit" onClick={handleDelete}>
           Delete Question
         </button>
       </div>

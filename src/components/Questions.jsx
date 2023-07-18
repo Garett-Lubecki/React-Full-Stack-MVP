@@ -15,7 +15,7 @@ const Questions = ({quiz}) => {
     if(button) {
         return <Button quiz={quiz} setButton={setButton}/>
     } else{
-        return <FlashCard  currentQuestion = {currentQuestion} quiz={quiz} setButton = {setButton} setcardNumber = {setcardNumber} question = {quiz[cardNumber]} setCurrentQuestion ={setCurrentQuestion} cardNumber={cardNumber} quizLength={quiz.length -1}/>
+        return <FlashCard  currentQuestion = {currentQuestion} quiz={quiz} setcardNumber = {setcardNumber} setCurrentQuestion ={setCurrentQuestion} cardNumber={cardNumber}/>
     }
 
 

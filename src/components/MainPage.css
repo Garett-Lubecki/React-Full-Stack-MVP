@@ -2,23 +2,26 @@
     background-color: aliceblue;
 }
 
-.allQuestions{
-    margin-top: 15vh;
+.allQuestions {
+    margin-top: 10rem;
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75vw;
-    min-height: 150vh;
-    max-height: 250vh;
-    overflow: scroll;
+    width: 100vw;
+    min-height: calc(100vh - 60px);
+    max-height: 200vh;
+    overflow: visible;
     justify-content: space-around;
     align-content: center;
-
-}   
-.allQuestions :hover {
+    margin-bottom: 10rem;
+  }
+  
+  .allQuestions:hover {
     color: rgb(196, 224, 255);
     cursor: pointer;
-}
+  }
+  
 
 .mainPageQuestions{
     margin-top: 15vh;

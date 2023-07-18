@@ -1,7 +1,8 @@
-.singleQuestion{
+.singleQuestion {
     color: rgb(192, 192, 192);
+    margin-top: 1rem;
     width: 75vw;
-    margin-left:  3rem;
+    height: 22rem;
     border-color: 1rem white;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
     margin: 1rem;
@@ -9,20 +10,112 @@
     background-clip: padding-box;
     background-color: rgb(35, 36, 40);
     border-radius: 25px;
-}
+    position: relative;
+    }
 
-.singleQ_Question{
+  
+  .singleQ_Question {
     background-color: rgb(35, 36, 40);
     padding-top: 1rem;
     padding-left: 2rem;
     font-size: 1.5rem;
-    font-weight: 300;   
-}
-
-.singleQ_Answer{
+    font-weight: 300;
+  }
+  
+  .singleQ_Answer {
     background-color: rgb(35, 36, 40);
     padding-left: 3rem;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    font-size: 1rem
-}
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  #edit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(50, 53, 57);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #edit:hover {
+    background-color: rgb(53, 67, 92);
+  }
+  
+  #delete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(50, 53, 57);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #delete:hover {
+    background-color: rgb(53, 67, 92);
+  }
+  
+  #updateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(35, 36, 40);
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+  
+  #updateForm input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(54, 55, 61);
+    border: none;
+    border-radius: 5px;
+    color: rgb(192, 192, 192);
+    width: 99%;
+  }
+  
+  #inputQuestion::placeholder,
+  #inputAnswer::placeholder {
+    color: rgb(128, 128, 128);
+  }
+  
+  #updatePostButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(50, 53, 57);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #updatePostButton:hover {
+    background-color: rgb(53, 67, 92);
+  }
+  
+  
+  
+  
+  
+  
+  

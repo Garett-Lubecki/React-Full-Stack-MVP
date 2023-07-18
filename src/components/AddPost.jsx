@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './addPost.css'
 
 const AddPost = () => {
 
@@ -25,7 +26,6 @@ const AddPost = () => {
                     body: JSON.stringify({question: textQuestion, answer: textAnswer})
                 }) 
             const jsonData = await response.json()
-            console.log(jsonData)
             }
             catch(err){
                 console.log(err)

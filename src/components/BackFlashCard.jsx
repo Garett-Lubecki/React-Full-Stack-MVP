@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import './backFlashCard.css'
 
-const BackFlashCard = ({question, currentQuestion, setcardNumber, setFaceOfCard, setButton, cardNumber, quizLength, setCurrentQuestion, quiz}) => {
+const BackFlashCard = ({currentQuestion, setcardNumber, setFaceOfCard, cardNumber, setCurrentQuestion, quiz}) => {
     function handleClick() {
         setcardNumber(++cardNumber)
         console.log(`Quiz lenght ${quiz.length} and Current Card ${cardNumber}`)
