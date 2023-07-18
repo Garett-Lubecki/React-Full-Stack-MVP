@@ -15,12 +15,17 @@ function App() {
 
 
     useEffect(() =>{
-      const getData = async () => {
-        const result = await fetch(URL)
-        const data = await result.json()
-        setQuiz(data)
+      try {
+        const getData = async () => {
+          const result = await fetch(URL)
+          const data = await result.json()
+          setQuiz(data)
+        }
+        getData()
+      } catch (err) {
+        console.log(err.message)
       }
-      getData()
+
     }, [])
 
   return (
