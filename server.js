@@ -12,10 +12,9 @@ const pool = new Pool ({
 
 const app = express()
 
-//Will need to fiddle with origin since it is not secure
-//temp origin
+
 app.use(cors({
-    origin: 'http://localhost:8000/'
+    origin: 'https://dashing-crisp-cb34eb.netlify.app'
 }))
 
 app.use(express.json());
