@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import pg from 'pg';
 import dotenv from  'dotenv';
-import { resolveBaseUrl } from 'vite';
 
 const { Pool } = pg
 
@@ -16,7 +15,7 @@ const app = express()
 //Will need to fiddle with origin since it is not secure
 //temp origin
 app.use(cors({
-    origin: '*'
+    origin: 'http://localhost:8000/'
 }))
 
 app.use(express.json());
