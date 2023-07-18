@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "server": "nodemon server.js",
-    "node": "concurrently \"npm run server\" \"npm run dev\"",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
