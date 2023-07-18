@@ -14,7 +14,7 @@ const app = express()
 
 
 app.use(cors({
-    origin: 'https://dashing-crisp-cb34eb.netlify.app'
+    origin: ['https://dashing-crisp-cb34eb.netlify.app', 'http://localhost:8000/']
 }))
 
 app.use(express.json());
