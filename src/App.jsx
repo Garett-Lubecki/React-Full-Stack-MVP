@@ -8,7 +8,7 @@ import AddPost from './components/AddPost'
 function App() {
   
   const [quiz, setQuiz] = useState([])
-  const URL = 'http://localhost:8000/questions' //'https://flash-cards.onrender.com/questions' 
+  const URL = 'https://react-mvp-buuv.onrender.com/questions' 
   const typesOfPages = ['Questions', 'Show All', 'Post']
   const [currentPage, setPage] = useState('Questions')
   const [displayPost, setDisplayPost] = useState(false)
