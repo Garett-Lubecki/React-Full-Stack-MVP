@@ -1,6 +1,6 @@
 # Study Time
 
-Study Time is a Single Page Application (SPA) built with React, Node.js, Express, and PostgreSQL. It provides basic CRUD (Create, Read, Update, Delete) functionality using RESTful routes.
+Study Time is a Single Page Application (SPA) built with React, Node.js, Express, and PostgreSQL. It provides basic CRUD (Create, Read, Update, Delete) functionality using RESTful protocols. 
 
 ## Prerequisites
 
