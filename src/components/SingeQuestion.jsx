@@ -20,7 +20,7 @@ const SingleQuestion = ({ question, setQuiz }) => {
   const handleDelete = async () => {
     try {
         console.log(textAnswer, textQuestion);
-        const response = await fetch(`http://localhost:8000/questions/${question.question_id}`, {
+        const response = await fetch(`https://react-mvp-buuv.onrender.com/questions/${question.question_id}`, {
           method: 'DELETE'
         })
         const jsonData = await response.json();
@@ -33,7 +33,7 @@ const SingleQuestion = ({ question, setQuiz }) => {
   const handleUpdate = async () => {
     try {
       console.log(textAnswer, textQuestion);
-      const response = await fetch(`http://localhost:8000/questions/${question.question_id}`, {
+      const response = await fetch(`https://react-mvp-buuv.onrender.com/questions/${question.question_id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const SingleQuestion = ({ question, setQuiz }) => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const result = await fetch('http://localhost:8000/questions');
+        const result = await fetch('https://react-mvp-buuv.onrender.com/questions');
         const data = await result.json();
         setQuiz(data);
       } catch (err) {

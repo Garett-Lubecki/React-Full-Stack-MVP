@@ -1,10 +1,8 @@
-DROP DATABASE IF EXISTS quizdb;
+-- DROP DATABASE IF EXISTS quizdb;
 
-CREATE DATABASE quizdb;
+-- CREATE DATABASE quizdb;
 
-\c quizdb;
-
-DROP TABLE IF EXISTS questions;
+DROP TABLE question;
 
 CREATE TABLE questions (
     question_id serial PRIMARY KEY,

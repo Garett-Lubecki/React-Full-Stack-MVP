@@ -4,7 +4,7 @@ import SingleQuestion from "./SingeQuestion"
 
 
 const ShowAll = ({quiz, setQuiz}) => {
-    const URL = 'http://localhost:8000/questions'
+    const URL = 'https://react-mvp-buuv.onrender.com/questions'
     useEffect(() =>{
         const getData = async () => {
         try{

@@ -18,7 +18,7 @@ const AddPost = ({displayPost, setDisplayPost, quiz, setQuiz}) => {
         console.log(textAnswer, textQuestion)
         async function postRequest () {
             try {
-                const response = await fetch(`http://localhost:8000/questions`, {
+                const response = await fetch(`https://react-mvp-buuv.onrender.com/questions`, {
                     method: 'POST',
                     headers: {
                         "Content-Type": "application/json"
