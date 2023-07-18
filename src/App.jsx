@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <NavigationBar setPage={setPage} displayPost={displayPost} setDisplayPost={setDisplayPost}/>
-      {displayPost && <AddPost />}
+      {displayPost && <AddPost setDisplayPost={setDisplayPost} displayPost ={displayPost} quiz ={quiz} setQuiz={setQuiz}/>}
       <MainPage quiz={quiz} setQuiz = {setQuiz}  currentPage ={currentPage}/>
       <Footer />
     </>

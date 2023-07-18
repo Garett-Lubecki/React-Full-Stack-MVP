@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import './addPost.css'
 
-const AddPost = () => {
+const AddPost = ({displayPost, setDisplayPost, quiz, setQuiz}) => {
 
     const [textQuestion, setTextQuestion] = useState('')
     const [textAnswer, setTextAnswer] = useState('')
@@ -26,12 +26,14 @@ const AddPost = () => {
                     body: JSON.stringify({question: textQuestion, answer: textAnswer})
                 }) 
             const jsonData = await response.json()
+            setQuiz([...quiz, jsonData])
             }
             catch(err){
                 console.log(err)
             }
         }
         postRequest()
+        setDisplayPost(!displayPost)
     }
 
     return (
